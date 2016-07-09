@@ -1,7 +1,7 @@
 * {
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 html {
@@ -23,6 +23,8 @@ body {
 
 ul {
     list-style-type: none;
+    margin:0;
+    padding: 0;
 }
 
 .fix::after {
@@ -58,9 +60,13 @@ ul {
 
 }
 
+
 .main li {
   color: #fff;
   font-weight: 100;
+  width: 100%;
+    margin-left: 0;
+    list-style-type: none;
 }
 
 
