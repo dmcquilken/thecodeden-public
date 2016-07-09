@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>The Code Den</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Personal website for Dennis McQuilken">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/site.css">
+
+        <!-- Fav Icon -->
+        <link href="imgs/logo.ico" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body ng-app="mySite">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-1 col-md-2"></div>
+                <div class="main col-xs-10 col-md-8" ng-controller="MainCtrl">
+                    <p class="iam"> <i>Hello, my name is</i> </p>
+                    <h1>Dennis McQuilken</h1>
+                    <p> <i>I am a</i> </p>
+                    <p> <span class="roles">{{ roles[index] }}</span> </p>
+                    <p> <span class="about">When im not {{ roles[index] }}-ing, you might find me:
+                        <ul>
+                            <li>experimenting w/ full-stack programming</li>
+                            <li>playing with my kids</li>
+                            <li>practing guitar</li>
+                            <li>doing something beyond my skill level and comfort zone</li>
+                        </ul>
+                        </span> </p>
+                    <p> <i>You can definitely find me at:</i> </p>
+                    <p><i class="fa fa-envelope"></i>&nbsp;<a href="mailto:dennis@thecodeden.com">dennis@thecodeden.com</a></p>
+                </div>
+                <div class="col-xs-1 col-md-2">
+                    <div class="pull-right header">
+                        <nav> 
+                            <ul>
+                                <li><a href="https://github.com/dmcquilken" title="visit my github profile"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/dmcquilken" title="contact me on linkedin"><i class="fa fa-linkedin-square"></i></a></li>
+                                <li><a href="files/resume.pdf" title="download my resume"><i class="fa fa-arrow-circle-down"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="./app.js"></script>
+</html>
