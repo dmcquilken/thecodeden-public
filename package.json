@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/dmcquilken/thecodeden#readme",
   "dependencies": {
+    "bower": "^1.7.9",
     "express": "^4.14.0"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
   }
 }
